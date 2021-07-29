@@ -1,4 +1,8 @@
 .banner {
-    background-color: rgb(33, 4, 84);
-    color: #fff;
-  }
+  background-color: rgb(33, 4, 84);
+  color: #fff;
+  height: 28em;
+  border-bottom-left-radius: 5em;
+  background-image: url("../public/home_banner.png");
+  background-size: cover;
+}

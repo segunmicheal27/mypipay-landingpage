@@ -1,0 +1,19 @@
+.footer {
+  background: linear-gradient(45deg, rgb(31, 5, 83), rgb(75, 38, 114));
+}
+.custom_img {
+  object-fit: contain;
+  width: 90% !important;
+  position: relative !important;
+  height: 100% !important;
+}
+.unset_img {
+  width: 100%;
+}
+.unset_img > div {
+  position: unset !important;
+}
+
+.footer_center {
+  color: #fff;
+}

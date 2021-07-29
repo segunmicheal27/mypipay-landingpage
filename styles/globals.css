@@ -1,16 +1,12 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.carousel .carousel-indicators [data-bs-target] {
+  background-color: #fff !important;
+  border: 2px solid #5b307e;
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+.carousel .carousel-indicators [data-bs-target].active {
+  background-color: #c211a1 !important;
+  border: 2px solid #c211a1;
 }
-
-* {
-  box-sizing: border-box;
-}
+/* .carousel .carousel-indicators [data-bs-target] { background-color: var(--primary) !important; } */

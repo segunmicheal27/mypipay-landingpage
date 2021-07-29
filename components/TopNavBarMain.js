@@ -5,15 +5,16 @@ import ls from "../styles/TopNavBarMain.module.css";
 
 const TopNavBarMain = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-      <Container fluid>
+    <Navbar
+      className={ls.bg_color}
+      collapseOnSelect
+      expand="lg"
+      bg="light"
+      variant="light"
+    >
+      <Container fluid className="px-3">
         <Navbar.Brand className="py-0" href="#home">
-          <Image
-            src="/vercel.svg"
-            alt="Logo"
-            height={30}
-            width={150}
-          />
+          <Image src="/vercel.svg" alt="Logo" height={30} width={150} />
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>

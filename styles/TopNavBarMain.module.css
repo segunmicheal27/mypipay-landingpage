@@ -1,11 +1,13 @@
 .bg_color {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 .nav_menu_link_dark {
   color: rgb(33, 4, 84) !important;
   font-weight: 500;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
 }
 .nav_menu_item_dark {
   color: rgb(33, 4, 84);
-  padding: 1em 1.5em;
+  padding: 1em 2em;
 }

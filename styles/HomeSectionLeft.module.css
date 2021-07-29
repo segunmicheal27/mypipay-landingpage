@@ -1,0 +1,12 @@
+.custom_img {
+  object-fit: contain;
+  width: 90% !important;
+  position: relative !important;
+  height: 100% !important;
+}
+.unset_img {
+  width: 100%;
+}
+.unset_img > div {
+  position: unset !important;
+}
