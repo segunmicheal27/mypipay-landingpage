@@ -14,6 +14,11 @@
   position: unset !important;
 }
 
-.footer_center {
+.footer_center,
+.footer_right {
+  color: #fff;
+}
+.footer_right > a {
+  text-decoration: none;
   color: #fff;
 }

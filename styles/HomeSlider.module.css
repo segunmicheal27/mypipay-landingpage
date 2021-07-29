@@ -5,18 +5,19 @@
   min-height: 23em;
 }
 .slide_item > p,
+.slide_item > div,
 .slide_item > h1 {
   max-width: 30rem;
   color: rgb(33, 4, 84);
 }
 .subscribe_input {
   background-color: #4c3775;
-  border:1px solid #4c3775;
+  border: 1px solid #4c3775;
   color: #fff;
 }
 .subscribe_input:focus {
   background-color: #4c3775;
-  border:1px solid #4c3775;
+  border: 1px solid #4c3775;
   box-shadow: none !important;
   color: #fff;
 }

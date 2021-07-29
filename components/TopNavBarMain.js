@@ -14,7 +14,7 @@ const TopNavBarMain = () => {
     >
       <Container fluid className="px-3">
         <Navbar.Brand className="py-0" href="#home">
-          <Image src="/vercel.svg" alt="Logo" height={30} width={150} />
+          <Image src="/my_pipay_logo.png" alt="Logo" height={25} width={140} />
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>

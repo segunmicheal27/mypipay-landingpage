@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="description" content="Borderless Transactions" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container fluid className="p-0 mb-5">
+      <Container fluid className="p-0 mb-lg-5">
         <Row className="g-0">
           <Col xs={12} sm={12} md={12} lg={9} xl={8} xxl={8}>
             <TopNavBarMain />
@@ -28,11 +28,11 @@ export default function Home() {
             <TopNavBarAddon />
           </Col>
         </Row>
-        <Row className="g-0 mb-5">
-          <Col xs={12} sm={12} md={12} lg={9} xl={8} xxl={8}>
+        <Row className="g-0 mb-lg-5">
+          <Col xs={12} sm={12} md={12} lg={9} xl={8} xxl={8} className="order-last order-lg-first">
             <HomeSlider />
           </Col>
-          <Col lg={3} xl={4} xxl={4}>
+          <Col lg={3} xl={4} xxl={4} className="order-first order-lg-last">
             <HomeBanner />
           </Col>
         </Row>
