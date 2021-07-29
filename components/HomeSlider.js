@@ -3,11 +3,9 @@ import React from "react";
 import {
   Button,
   Carousel,
-  Col,
   Container,
   FormControl,
   InputGroup,
-  Row,
 } from "react-bootstrap";
 import { HiMail } from "react-icons/hi";
 import ls from "../styles/HomeSlider.module.css";
