@@ -1,0 +1,13 @@
+.nav_menu_link_light {
+  color: #fff;
+  font-weight: 500;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+.nav_menu_item_light {
+  color: #fff;
+}
+
+.addon {
+  background-color: rgb(33, 4, 84);
+}
