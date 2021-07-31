@@ -5,7 +5,7 @@ import ls from "../styles/HomeFooter.module.css";
 
 const HomeFooter = () => {
   return (
-    <Container fluid className={`${ls.footer} p-3 align-items-stretch`}>
+    <Container fluid className={`${ls.footer} p-5 align-items-stretch`}>
       <Row className="gy-5">
         <Col xs={12} lg={4}>
           <div className="d-flex justify-content-center justify-content-lg-start mx-auto">
