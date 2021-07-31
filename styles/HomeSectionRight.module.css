@@ -1,5 +1,6 @@
 .section {
   color: rgb(33, 4, 84);
+  min-height: 22em;
 }
 .section > h2,
 .section > p {

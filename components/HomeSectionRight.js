@@ -7,9 +7,8 @@ const HomeSectionRight = () => {
     <div className={`${ls.section} text-center py-1 py-lg-5`}>
       <h2 className="mt-5">CREATE AN ACCOUNT IN VERY FEW STEPS</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, tempora!
-        Voluptatem molestiae temporibus aut tempore soluta nobis enim aliquid
-        repellat, aperiam!
+        Open an account with us to start enjoying transaction without
+        limitation, your account opening is just a few steps away.
         <br />
         <Button className={`${ls.create_account_button} mb-3 mt-4`}>
           Create An Account
