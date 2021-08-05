@@ -1,15 +1,12 @@
+import HomeBanner from "@/components/LandingPage/HomeBanner";
+import HomeFooter from "@/components/LandingPage/HomeFooter";
+import HomeSectionLeft from "@/components/LandingPage/HomeSectionLeft";
+import HomeSectionRight from "@/components/LandingPage/HomeSectionRight";
+import HomeSlider from "@/components/LandingPage/HomeSlider";
+import TopNavBarMain from "@/components/LandingPage/TopNavBarMain";
+import TopNavBarAddon from "@/components/LandingPage/TopNavBarAddon";
 import Head from "next/head";
-import Image from "next/image";
-import { Col, Container, Nav, Navbar, NavDropdown, Row } from "react-bootstrap";
-import HomeBanner from "../components/HomeBanner";
-import HomeFooter from "../components/HomeFooter";
-import HomeSectionLeft from "../components/HomeSectionLeft";
-import HomeSectionRight from "../components/HomeSectionRight";
-import HomeSlider from "../components/HomeSlider";
-import Jumbotron from "../components/HomeSlider";
-import TopNavBarAddon from "../components/TopNavBarAddon";
-import TopNavBarMain from "../components/TopNavBarMain";
-import styles from "../styles/Home.module.css";
+import { Col, Container, Row } from "react-bootstrap";
 
 export default function Home() {
   return (
@@ -17,7 +14,6 @@ export default function Home() {
       <Head>
         <title>My PiPay</title>
         <meta name="description" content="Borderless Transactions" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container fluid className="p-0 mb-lg-5">
         <Row className="g-0">

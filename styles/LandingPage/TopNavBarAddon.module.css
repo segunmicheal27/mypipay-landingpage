@@ -1,0 +1,18 @@
+.nav_menu_link_light {
+  color: #fff;
+  background-color: #f6b133;
+  font-weight: 500;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+.nav_menu_link_light:hover {
+  color:#fff;
+  background-color: #d68e08;
+}
+.nav_menu_item_light {
+  color: #fff;
+}
+
+.addon {
+  background-color: rgb(24, 5,80);
+}
