@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/my_pipay_favicon.png" />
+        <link rel="icon" href="/images/my_pipay_favicon.png" />
       </Head>
       <Component {...pageProps} />
     </>
