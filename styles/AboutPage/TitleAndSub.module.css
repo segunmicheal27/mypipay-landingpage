@@ -1,0 +1,17 @@
+.header_highlighter {
+  color: #fab13c;
+}
+.header {
+  color: rgb(33, 4, 84);
+}
+.header > h6 {
+  color: #000000;
+  font-weight: 500;
+}
+.header > h2,
+.header > h6,
+.header > p {
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}

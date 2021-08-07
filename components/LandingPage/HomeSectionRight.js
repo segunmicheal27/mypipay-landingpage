@@ -32,7 +32,7 @@ const HomeSectionRight = () => {
         <div className="d-flex justify-content-center mx-auto">
           <div>
             <Image
-              src="/applestore_download_button.png"
+              src="/images/applestore_download_button.png"
               className="px-1"
               height={40}
               width={150}
@@ -42,7 +42,7 @@ const HomeSectionRight = () => {
           </div>
           <div>
             <Image
-              src="/playstore_download_button.png"
+              src="/images/playstore_download_button.png"
               className="px-1"
               height={40}
               width={150}

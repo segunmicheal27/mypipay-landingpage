@@ -1,0 +1,58 @@
+.section {
+  color: rgb(33, 4, 84);
+}
+.section > h6 {
+  color: #000000;
+  font-weight: 500;
+}
+.section > h2,
+.section > div,
+.section > p {
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.send_message_btn {
+  background-color: #f6b133;
+  color: #fff;
+  border-radius: .5rem;
+  border: 0;
+}
+.send_message_btn:hover,
+.send_message_btn:active,
+.send_message_btn:focus {
+  background-color: #d68e08;
+}
+.send_message_btn:focus {
+  box-shadow: none !important;
+}
+.custom_input {
+  background: #f5f6fa;
+  border: 1px solid #d9d9d9;
+  color: #4c3775;
+  border-radius: .5em;
+}
+.custom_input:focus {
+  background: #f5f6fa;
+  border: 1px solid #4c3775;
+  box-shadow: none !important;
+}
+.subscribe_button {
+  background-color: #f6b133;
+  color: #fff;
+  border: 0;
+  border-top-right-radius: 1.5em;
+  border-bottom-right-radius: 1.5rem;
+}
+.subscribe_button:hover,
+.subscribe_button:active,
+.subscribe_button:focus {
+  background-color: #d68e08;
+}
+.subscribe_button:focus {
+  box-shadow: none !important;
+}
+.header_highlighter {
+  color: #fab13c;
+}
