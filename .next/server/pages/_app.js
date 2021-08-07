@@ -38,7 +38,7 @@ function MyApp({
         content: "width=device-width, initial-scale=1"
       }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
         rel: "icon",
-        href: "/my_pipay_favicon.png"
+        href: "/images/my_pipay_favicon.png"
       })]
     }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, _objectSpread({}, pageProps))]
   });
