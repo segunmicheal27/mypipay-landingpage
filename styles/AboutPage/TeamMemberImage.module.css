@@ -1,0 +1,39 @@
+.lvl_one .bg_image {
+  width: 14em;
+  height: 15em;
+}
+.lvl_one .name {
+  font-size: 1em;
+  font-weight: 500;
+}
+.lvl_one .role {
+  font-size: 0.8em;
+}
+
+.lvl_two .bg_image {
+  width: 11em;
+  height: 12em;
+}
+.lvl_two .name {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+.lvl_two .role {
+  font-size: 0.75em;
+}
+
+@media screen and (max-width: 992px) {
+  .lvl_one .bg_image,
+  .lvl_two .bg_image {
+    width: 10em;
+    height: 12em;
+  }
+}
+
+@media screen and (max-width: 355px) {
+    .lvl_one .bg_image,
+    .lvl_two .bg_image {
+      width: 8em;
+      height: 9em;
+    }
+  }

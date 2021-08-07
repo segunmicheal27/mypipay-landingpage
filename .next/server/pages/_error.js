@@ -4,20 +4,20 @@ exports.id = 820;
 exports.ids = [820];
 exports.modules = {
 
-/***/ 359:
+/***/ 3359:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(426);
+var _interopRequireDefault = __webpack_require__(2426);
 
 exports.__esModule = true;
 exports.default = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(297));
+var _react = _interopRequireDefault(__webpack_require__(9297));
 
-var _head = _interopRequireDefault(__webpack_require__(273));
+var _head = _interopRequireDefault(__webpack_require__(5273));
 
 const statusCodes = {
   400: 'Bad Request',
@@ -109,7 +109,7 @@ const styles = {
 
 /***/ }),
 
-/***/ 426:
+/***/ 2426:
 /***/ (function(module) {
 
 function _interopRequireDefault(obj) {
@@ -122,7 +122,7 @@ module.exports = _interopRequireDefault;
 
 /***/ }),
 
-/***/ 273:
+/***/ 5273:
 /***/ (function(module) {
 
 "use strict";
@@ -130,7 +130,7 @@ module.exports = require("next/dist/next-server/lib/head.js");;
 
 /***/ }),
 
-/***/ 297:
+/***/ 9297:
 /***/ (function(module) {
 
 "use strict";
@@ -145,7 +145,7 @@ module.exports = require("react");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-var __webpack_exports__ = (__webpack_exec__(359));
+var __webpack_exports__ = (__webpack_exec__(3359));
 module.exports = __webpack_exports__;
 
 })();

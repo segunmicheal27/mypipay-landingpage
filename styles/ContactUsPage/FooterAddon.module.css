@@ -1,0 +1,62 @@
+.footer_addon {
+  background: linear-gradient(45deg, rgb(31, 5, 83), rgb(75, 38, 114));
+}
+
+.section {
+  color: #fff;
+}
+.section > h6 {
+  color: #000000;
+  font-weight: 500;
+}
+.section > h2,
+.section > div,
+.section > p {
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.create_account_button {
+  background-color: #f6b133;
+  color: #fff;
+  border-radius: 1rem;
+  border: 0;
+}
+.create_account_button:hover,
+.create_account_button:active,
+.create_account_button:focus {
+  background-color: #d68e08;
+}
+.create_account_button:focus {
+  box-shadow: none !important;
+}
+.subscribe_input {
+  background-color: #4c3775;
+  border: 1px solid #4c3775;
+  color: #fff;
+}
+.subscribe_input:focus {
+  background-color: #4c3775;
+  border: 1px solid #4c3775;
+  box-shadow: none !important;
+  color: #fff;
+}
+.subscribe_button {
+  background-color: #f6b133;
+  color: #fff;
+  border: 0;
+  border-top-right-radius: 1.5em;
+  border-bottom-right-radius: 1.5rem;
+}
+.subscribe_button:hover,
+.subscribe_button:active,
+.subscribe_button:focus {
+  background-color: #d68e08;
+}
+.subscribe_button:focus {
+  box-shadow: none !important;
+}
+.header_highlighter {
+  color: #fab13c;
+}
