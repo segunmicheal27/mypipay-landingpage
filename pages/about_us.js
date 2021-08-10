@@ -35,7 +35,7 @@ function about_us() {
         <title>My PiPay | About Us</title>
         <meta
           name="description"
-          content="Brief Summary About us Borderless Transactions"
+          content="A Brief Summary About making Borderless Transactions"
         />
       </Head>
       <Container fluid className="p-0 mb-2">

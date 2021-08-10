@@ -9,15 +9,18 @@ const HomeFooter = () => {
       <div
         className={`d-flex flex-column flex-lg-row justify-content-between align-content-end`}
       >
-        <div className="mb-4 mb-lg-0 ">
+        <div className="mb-4 mb-lg-0">
           <div>
             <Image
               src="/images/footer_logo.png"
-              height={100}
+              height={76}
               width={110}
               alt="App phone mockup"
               title="App phone mockup"
             />
+            <h3 className="fw-bolder mb-0">
+              My<span className={ls.header_highlighter}>Pi</span>Pay
+            </h3>
           </div>
         </div>
         <div className="mb-4 mb-lg-0 align-self-start align-self-lg-end">

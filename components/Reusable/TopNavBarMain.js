@@ -15,12 +15,16 @@ const TopNavBarMain = () => {
     >
       <Container fluid className="px-3">
         <Navbar.Brand className="py-0" href="#home">
-          <Image
-            src="/images/my_pipay_logo.png"
-            alt="Logo"
-            height={25}
-            width={140}
-          />
+            <Image
+              src="/images/my_pipay_favicon.png"
+              alt="Logo"
+              height={30}
+              width={45}
+              className="me-1 align-top"
+            />
+          <h3 className="fw-bolder mb-0 d-inline pb-1">
+            My<span className={ls.header_highlighter}>Pi</span>Pay
+          </h3>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>

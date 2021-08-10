@@ -12,8 +12,8 @@ const contact_us = () => {
   return (
     <>
       <Head>
-        <title>My PiPay | Contact Us</title>
-        <meta name="description" content="Contact us Borderless Transactions" />
+        <title>MyPiPay | Contact Us</title>
+        <meta name="description" content="Contact us for Borderless Transactions" />
       </Head>
       <Container fluid className="p-0 mb-2">
         <Row className="g-0">

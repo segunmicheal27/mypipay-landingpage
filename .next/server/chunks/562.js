@@ -29,15 +29,21 @@ const HomeFooter = () => {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
       className: `d-flex flex-column flex-lg-row justify-content-between align-content-end`,
       children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-        className: "mb-4 mb-lg-0 ",
-        children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-          children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_image__WEBPACK_IMPORTED_MODULE_1__.default, {
+        className: "mb-4 mb-lg-0",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+          children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_image__WEBPACK_IMPORTED_MODULE_1__.default, {
             src: "/images/footer_logo.png",
-            height: 100,
+            height: 76,
             width: 110,
             alt: "App phone mockup",
             title: "App phone mockup"
-          })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h3", {
+            className: "fw-bolder mb-0",
+            children: ["My", /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+              className: (_styles_Reusable_HomeFooter_module_css__WEBPACK_IMPORTED_MODULE_4___default().header_highlighter),
+              children: "Pi"
+            }), "Pay"]
+          })]
         })
       }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
         className: "mb-4 mb-lg-0 align-self-start align-self-lg-end",
@@ -185,15 +191,22 @@ const TopNavBarMain = () => {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__.Container, {
       fluid: true,
       className: "px-3",
-      children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__.Navbar.Brand, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__.Navbar.Brand, {
         className: "py-0",
         href: "#home",
-        children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_image__WEBPACK_IMPORTED_MODULE_1__.default, {
-          src: "/images/my_pipay_logo.png",
+        children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_image__WEBPACK_IMPORTED_MODULE_1__.default, {
+          src: "/images/my_pipay_favicon.png",
           alt: "Logo",
-          height: 25,
-          width: 140
-        })
+          height: 30,
+          width: 45,
+          className: "me-1 align-top"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h3", {
+          className: "fw-bolder mb-0 d-inline pb-1",
+          children: ["My", /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+            className: (_styles_Reusable_TopNavBarMain_module_css__WEBPACK_IMPORTED_MODULE_5___default().header_highlighter),
+            children: "Pi"
+          }), "Pay"]
+        })]
       }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__.Navbar.Toggle, {}), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__.Navbar.Collapse, {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__.Nav, {
           className: "ms-auto",
@@ -239,7 +252,8 @@ module.exports = {
 	"custom_img": "HomeFooter_custom_img__131oj",
 	"unset_img": "HomeFooter_unset_img__1MngG",
 	"footer_center": "HomeFooter_footer_center__1EFRq",
-	"footer_right": "HomeFooter_footer_right__2968w"
+	"footer_right": "HomeFooter_footer_right__2968w",
+	"header_highlighter": "HomeFooter_header_highlighter__3PxJz"
 };
 
 
@@ -265,7 +279,8 @@ module.exports = {
 module.exports = {
 	"bg_color": "TopNavBarMain_bg_color__3dPsl",
 	"nav_menu_link_dark": "TopNavBarMain_nav_menu_link_dark__1qAQe",
-	"nav_menu_item_dark": "TopNavBarMain_nav_menu_item_dark__3XDh8"
+	"nav_menu_item_dark": "TopNavBarMain_nav_menu_item_dark__3XDh8",
+	"header_highlighter": "TopNavBarMain_header_highlighter__1Efrb"
 };
 
 

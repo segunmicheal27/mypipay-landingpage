@@ -8,7 +8,7 @@ const HomeSectionRight = () => {
   return (
     <div className={`${ls.section} text-center py-1 py-lg-5 d-flex flex-column align-content-center justify-content-center`}>
       <h2 className="text-center mx-auto mb-0">
-        JOIN <span className={ls.header_highlighter}>Pi</span>PAY TODAY
+        JOIN My<span className={ls.header_highlighter}>Pi</span>PAY TODAY
       </h2>
       <p className="text-center mx-auto mb-4">
         Join our community and receive updates on latest developments

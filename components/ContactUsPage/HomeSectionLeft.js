@@ -16,10 +16,10 @@ const HomeSectionLeft = () => {
           Livingstone, Zambia
         </p>
         <p>
-          <FaPhoneAlt className="mr-1" /> +260 98 858 858 / +260 99 888 888
+          <FaPhoneAlt className="mr-1" /> +2347066886477
         </p>
         <p>
-          <HiMail className="mr-1" /> info@mypipay.com / support@mypipay.com
+          <HiMail className="mr-1" /> contact@mypipay.com
         </p>
       </div>
       <div className={`${ls.section} mb-5`}>

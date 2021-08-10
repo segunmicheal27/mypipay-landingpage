@@ -16,7 +16,7 @@ const HomeSlider = () => {
       <Carousel indicators={true} controls={false} interval={3000}>
         <Carousel.Item className={`${ls.slide_item} p-3 text-center mt-5`}>
           <h1 className="text-center mx-auto mb-0">
-            CREATE A <span className={ls.header_highlighter}>Pi</span>PAY
+            CREATE A My<span className={ls.header_highlighter}>Pi</span>Pay
             ACCOUNT IN FEW STEPS
           </h1>
           <p className="text-center mx-auto mb-4">
@@ -27,7 +27,7 @@ const HomeSlider = () => {
         </Carousel.Item>
         <Carousel.Item className={`${ls.slide_item} p-3 text-center mt-5`}>
           <h1 className="text-center mx-auto mb-0">
-            PAY BILL WITH <span className={ls.header_highlighter}>Pi</span>PAY
+            PAY BILL WITH My<span className={ls.header_highlighter}>Pi</span>Pay
           </h1>
           <p className="text-center mx-auto mb-4">
             Pay bills with pipay with just single click, pipay make transaction
@@ -37,8 +37,7 @@ const HomeSlider = () => {
         </Carousel.Item>
         <Carousel.Item className={`${ls.slide_item} p-3 text-center mt-5`}>
           <h1 className="text-center mx-auto mb-0">
-            EARN INTEREST WITH <span className={ls.header_highlighter}>Pi</span>
-            PAY
+            EARN INTEREST WITH My<span className={ls.header_highlighter}>Pi</span>Pay
           </h1>
           <p className="text-center mx-auto mb-4">
             Earn interest on major crypto currency you entrust us.
@@ -46,8 +45,7 @@ const HomeSlider = () => {
         </Carousel.Item>
         <Carousel.Item className={`${ls.slide_item} p-3 text-center mt-5`}>
           <h1 className="text-center mx-auto mb-0">
-            EARN CREDIT WITH <span className={ls.header_highlighter}>Pi</span>
-            PAY
+            EARN CREDIT WITH My<span className={ls.header_highlighter}>Pi</span>Pay
           </h1>
           <p className="text-center mx-auto mb-4">
             Earn credit on every transaction you make especially on pi currency.

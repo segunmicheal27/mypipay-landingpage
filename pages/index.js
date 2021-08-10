@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>My PiPay</title>
+        <title>MyPiPay</title>
         <meta name="description" content="Borderless Transactions" />
       </Head>
       <Container fluid className="p-0 mb-lg-5">
