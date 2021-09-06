@@ -3,7 +3,7 @@
   color: #fff;
   height: 28em;
   border-bottom-left-radius: 5em;
-  background-image: url("@/images/home_banner.png");
+  background-image: url("/images/home_banner.png");
   background-size: cover;
 }
 @media screen and (max-width: 992px){

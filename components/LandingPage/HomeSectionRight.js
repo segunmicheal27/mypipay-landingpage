@@ -1,10 +1,12 @@
 import ls from "@/styles/LandingPage/HomeSectionRight.module.css";
-import Image from "next/image";
+// import Image from "next/image";
 import React from "react";
 import { Button, FormControl, InputGroup } from "react-bootstrap";
 import { HiMail } from "react-icons/hi";
 
 const HomeSectionRight = () => {
+    const imgAppleStoreSrc = require('../../public/images/applestore_download_button.png?resize&size=200');
+    const imgPlayStoreSrc = require('../../public/images/playstore_download_button.png?resize&size=200');
   return (
     <div className={`${ls.section} text-center py-1 py-lg-5 d-flex flex-column align-content-center justify-content-center`}>
       <h2 className="text-center mx-auto mb-0">
@@ -31,8 +33,9 @@ const HomeSectionRight = () => {
       <div className="mx-auto">
         <div className="d-flex justify-content-center mx-auto">
           <div>
-            <Image
-              src="/images/applestore_download_button.png"
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={imgAppleStoreSrc.src}
               className="px-1"
               height={40}
               width={150}
@@ -41,8 +44,9 @@ const HomeSectionRight = () => {
             />
           </div>
           <div>
-            <Image
-              src="/images/playstore_download_button.png"
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={imgPlayStoreSrc}
               className="px-1"
               height={40}
               width={150}

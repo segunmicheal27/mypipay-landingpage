@@ -1,10 +1,11 @@
 import ls from "@/styles/Reusable/TopNavBarMain.module.css";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 const TopNavBarMain = () => {
+  const imgFaviconSrc = require('../../public/images/my_pipay_favicon.png?resize&size=100');
   return (
     <Navbar
       className={ls.bg_color}
@@ -15,8 +16,9 @@ const TopNavBarMain = () => {
     >
       <Container fluid className="px-3">
         <Navbar.Brand className="py-0" href="#home">
-            <Image
-              src="/images/my_pipay_favicon.png"
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={imgFaviconSrc.src}
               alt="Logo"
               height={30}
               width={45}

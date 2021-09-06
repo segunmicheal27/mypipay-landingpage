@@ -7,10 +7,9 @@ const TopNavBarAddon = ({ darkMode = false }) => {
     <Nav className={`${darkMode && ls.addon} justify-content-end p-3`}>
       <Nav.Item>
         <Nav.Link
-          href="#login"
-          className={`${ls.nav_menu_link_light} rounded-pill py-1 px-3 me-5`}
-        >
-          COMING SOON
+            href="/to_other_pi_wallet"
+          className={`${ls.nav_menu_link_light} rounded-pill py-1 px-3 me-5`}>
+          MAKE TRANSFER
         </Nav.Link>
       </Nav.Item>
     </Nav>

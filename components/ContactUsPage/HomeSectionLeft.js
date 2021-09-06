@@ -1,5 +1,5 @@
 import ls from "@/styles/ContactUsPage/HomeSectionLeft.module.css";
-import Image from "next/image";
+// import Image from "next/image";
 import React from "react";
 import {} from "react-bootstrap";
 
@@ -7,6 +7,9 @@ import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 
 const HomeSectionLeft = () => {
+  const imgInstagramIconDarkSrc = require('../../public/images/instagram_icon_dark.png?resize&size=100');
+  const imgFacebookIconDarkSrc = require('../../public/images/facebook_icon_dark.png?resize&size=100');
+  const imgTwitterIconDarkSrc = require('../../public/images/twitter_icon_dark.png?resize&size=100');
   return (
     <>
       <div className={`${ls.section} mb-5`}>
@@ -25,24 +28,27 @@ const HomeSectionLeft = () => {
       <div className={`${ls.section} mb-5`}>
         <h3 className={`fs-3 fw-bolder mb-3`}>FOLLOW US</h3>
         <div className="d-flex justify-content-start">
-          <Image
-            src="/images/instagram_icon_dark.png"
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={imgInstagramIconDarkSrc.src}
             className="px-1"
             height={30}
             width={40}
             alt="Instagram"
             title="Instagram"
           />
-          <Image
-            src="/images/facebook_icon_dark.png"
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={imgFacebookIconDarkSrc.src}
             className="px-1"
             height={30}
             width={40}
             alt="Facebook"
             title="Facebook"
           />
-          <Image
-            src="/images/twitter_icon_dark.png"
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={imgTwitterIconDarkSrc.src}
             className="px-1"
             height={30}
             width={40}

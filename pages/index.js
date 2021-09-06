@@ -6,8 +6,8 @@ import ImageSection from "@/components/Reusable/ImageSection";
 import TopNavBarAddon from "@/components/Reusable/TopNavBarAddon";
 import TopNavBarMain from "@/components/Reusable/TopNavBarMain";
 import Head from "next/head";
-import { Col, Container, Row } from "react-bootstrap";
 
+import { Col, Container, Row } from "react-bootstrap";
 export default function Home() {
   return (
     <>
