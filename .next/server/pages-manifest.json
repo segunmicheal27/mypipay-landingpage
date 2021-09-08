@@ -4,6 +4,7 @@
   "/api/hello": "pages/api/hello.js",
   "/contact_us": "pages/contact_us.html",
   "/": "pages/index.html",
+  "/to_other_pi_wallet": "pages/to_other_pi_wallet.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html"

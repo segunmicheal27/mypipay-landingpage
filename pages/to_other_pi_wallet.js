@@ -7,6 +7,7 @@ import ls from "@/styles/ContactUsPage/HomeSectionRight.module.css";
 import {FaExchangeAlt, FaPaperPlane} from "react-icons/fa";
 import {useState} from "react";
 import axios from "axios";
+import {wait} from "next/dist/build/output/log";
 
 
 function ToOtherPiWallet() {
@@ -19,7 +20,7 @@ function ToOtherPiWallet() {
         'Content-Type': 'application/json',
         'Accept': 'application/json, text-plain, */*',
         'X-Requested-With': 'XMLHttpRequest',
-        'Access-Control-Allow-Origin': '*'
+        'Access-Control-Allow-Origin': '*',
     }
 
     async function handleSubmit(e) {
@@ -27,76 +28,95 @@ function ToOtherPiWallet() {
 
         const scopes = ['username', 'payments'];
         window.Pi.init({ version: "2.0", sandbox: true});
-        const authResult =  (scopeData, methodCallBack) => {
-            window.Pi.authenticate(scopeData, methodCallBack)
-        }
-        const onIncompletePaymentFound = async (payment) => {
-            console.log("onIncompletePaymentFound", payment);
-        }
-        authResult(scopes, onIncompletePaymentFound);
 
-        async function fetchData(method, url, data) {
-            const response = await fetch(url, {
-                method: method,
-                cache: 'no-cache',
-                credentials: 'same-origin',
-                headers: headers,
-                body: JSON.stringify(data)
-            }).then(response => {
-                console.log(response)
-                if (!response.ok) {
-                    throw new Error("Failed with HTTP code " + response.status);
-                }
-                return response;
-            }).then(response => response.json());
-            console.log(response);
-            return response
-        }
+        async function auth() {
+            try {
+                // Identify the user with their username / unique network-wide ID, and
+                // get permission to request payments from them.
+                const scopes = ['username', 'payments'];
+                function onIncompletePaymentFound(payment) {
 
-        const paymentData = {
-            amount: amount,
-            memo: "Demo Topup wallet",
-            to_address: recipient_wallet,
-            metadata: { pieId: 1 },
-        }
+                    var data = {
+                        'action': 'complete',
+                        'paymentId': payment.identifier,
+                        'txid': payment.transaction.txid,
+                        'app_client': 'auth_example'
+                    };
+                    return axios.post( "https://mypipay-api.herokuapp.com/complete-payment", data).then(function(data) {
+                        // $("#button_click").prop( "disabled", false );
+                    });
+                }; // Read more about this in the SDK reference
 
-        console.log(paymentData);
+                window.Pi.authenticate(scopes, onIncompletePaymentFound).then(function(auth) {
+                   /* $( "#button_click" ).click(function() {
+                        if(parseFloat($("#pi_donate").val()) > 0)
+                        {
+                            $("#button_click").prop( "disabled", true );
+                            /!*setTimeout(function ()
+                            {
+                                $("#button_click").prop( "disabled", false );
+                            }, 10000);*!/
 
-        const onReadyForServerApproval = async (paymentId) => {
-            console.log("onReadyForServerApproval", paymentId);
-            fetchData('post', 'https://mypipay-api.herokuapp.com/approve-payment',
-                { 'payment_id': paymentId}, headers );
-        }
-
-        const onReadyForServerCompletion = async (paymentId, txid) => {
-            console.log("onReadyForServerCompletion", paymentId);
-             fetchData('post', 'https://mypipay-api.herokuapp.com/approve-payment/complete-payment',
-                 {
-                     'payment_id': paymentId,
-                     'txid': txid
-                 }, headers );
-
-        }
-
-        const onCancel = async (paymentId) => {
-            console.log("onCancel", paymentId);
-            // fetchData('post', '/cancel', {paymentId}, headers )
-        }
-        const onError = ( error, payment) => {
-            console.log("onError", error);
-            if (payment){
-                console.log(payment)
+                        }
+                        //alert("Click");
+                    });*/
+                    transfer();
+                    //alert('Hello ' + auth.user.username);
+                }).catch(function(error) {
+                    console.error(error);
+                });
+            } catch (err) {
+                console.log(err)
+               // alert(err);
+                // Not able to fetch the user
             }
         }
 
-        const paymentMethodCallbacks = {
-            onReadyForServerApproval: onReadyForServerApproval,
-            onReadyForServerCompletion: onReadyForServerCompletion,
-            onCancel: onCancel,
-            onError: onError,
-        };
+        async function transfer() {
+            try {
+                const payment = window.Pi.createPayment({
+                    // Amount of π to be paid:
+                    amount: amount,
+                    to_address: recipient_wallet,
+                    // An explanation of the payment - will be shown to the user:
+                    memo: "Demo transfer request", // e.g: "Digital kitten #1234",
+                    // An arbitrary developer-provided metadata object - for your own usage:
+                    metadata: { paymentType: "transfer demo" /* ... */ }, // e.g: { kittenId: 1234 }
+                }, {
+                    // Callbacks you need to implement - read more about those in the detailed docs linked below:
+                    onReadyForServerApproval: function(paymentId) {
+                        let data = {
+                            'action': 'approve',
+                            'paymentId': paymentId,
+                            'txid': '',
+                            'app_client': 'auth_example'
+                        };
+                        return axios.post( "https://mypipay-api.herokuapp.com/approve-payment", data).then(function(data) {
+                           // $("#button_click").prop( "disabled", false );
+                        });
+                    },
+                    onReadyForServerCompletion: function(paymentId, txid) {
+                        let data = {
+                            'action': 'complete',
+                            'paymentId': paymentId,
+                            "txid": txid,
+                            'app_client': 'auth_example'
+                        };
+                        return axios.post( "https://mypipay-api.herokuapp.com/complete-payment", data).then(function(data) {
+                           // $("#button_click").prop( "disabled", false );
+                        });
+                    },
+                    onCancel: function(paymentId) {},
+                    onError: function(error, payment) {console.log(error);},
+                });
+            } catch(err) {
+                console.log(err);
+                // alert(err);
+            }
+        }
 
-        window.Pi.createPayment(paymentData, paymentMethodCallbacks);
+        auth();
+
     }
 
     return (
@@ -166,5 +186,4 @@ function ToOtherPiWallet() {
         </>
     );
 }
-
 export default ToOtherPiWallet;

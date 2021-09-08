@@ -4,13 +4,26 @@ exports.id = 820;
 exports.ids = [820];
 exports.modules = {
 
+/***/ 5318:
+/***/ (function(module) {
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+
+module.exports = _interopRequireDefault;
+
+/***/ }),
+
 /***/ 3359:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(2426);
+var _interopRequireDefault = __webpack_require__(5318);
 
 exports.__esModule = true;
 exports.default = void 0;
@@ -106,19 +119,6 @@ const styles = {
     padding: 0
   }
 };
-
-/***/ }),
-
-/***/ 2426:
-/***/ (function(module) {
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    "default": obj
-  };
-}
-
-module.exports = _interopRequireDefault;
 
 /***/ }),
 
